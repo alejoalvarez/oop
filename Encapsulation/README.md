@@ -1,5 +1,5 @@
-[[_TOC_]]
-
+# Table of Contents
+1. [Aplicar Políticas de Pull Request](#example)
 
 ## **¿Quién debe crear repositorios?**
 - Movilizadores
