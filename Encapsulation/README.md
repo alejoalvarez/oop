@@ -1,5 +1,5 @@
 # Table of Contents
-1. [Aplicar Políticas de Pull Request](#example)
+1. [Aplicar Políticas de Pull Request](#introduction)
 
 ## **¿Quién debe crear repositorios?**
 - Movilizadores
@@ -15,7 +15,7 @@ Se debe seguir el estándar de nombramiento definido. [Clic Aquí para ver Está
 
 El analista debe saber el AW completo con el consecutivo incremental del componente y puede validarlo en USD para verificar que sea correcto.
 
-_**Ejemplo**_. AW1172001
+_**Ejemplo**_. AW1172001 <a name="introduction"></a>
 
 Se de saber el nombre del repositorio. Puede ser el nombre de la aplicación o del componente.
 
