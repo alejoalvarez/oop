@@ -7,6 +7,8 @@ Basically an object can be defined as a data (attributes or properties) and beha
 
 Simply put, OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them. This approach to programming is well-suited for programs that are large, complex and actively updated or maintained. Due to the organization of an object-oriented program, this method is also conducive to collaborative development where projects can be divided into groups. Additional benefits of OOP include code reusability, scalability  and efficiency.
 
+OOP was developed to increase the reusability and maintainability of source code.[33] Transparent representation of the control flow had no priority and was meant to be handled by a compiler. With the increasing relevance of parallel hardware and multithreaded coding, developing transparent control flow becomes more important, something hard to achieve with OOP
+
 ## Principles of OOP
 Object-oriented programming is based on the following principles:
 
@@ -43,3 +45,21 @@ Example:
 - **Object 2** => name:Juan,  last name: Restrepo Perez, phone: 1111111, address: Street 2345.
 
 We have two object with the same definition of class (or template) but with diferent information
+
+
+### SOLID
+Five design principles intended to make software designs more understandable, flexible and maintainable
+Single responsibility principle
+A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+
+- **Open/closed principle**
+"Software entities ... should be open for extension, but closed for modification."
+
+- **Liskov substitution principle**
+"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program".
+
+- **Interface segregation principle**
+"Many client-specific interfaces are better than one general-purpose interface."
+
+- **Dependency inversion principle**
+One should "depend upon abstractions, [not] concretions".
