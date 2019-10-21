@@ -25,6 +25,10 @@ Relationships and subclasses between objects can be assigned, allowing developer
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
 meaning or usage is necessary for each execution of that object, cutting down on the need to duplicate code.
 
+  Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently. This is done by Java with the help of the signature and declaration of these entities.
+  
+[Example Polymorphism](https://github.com/Alejo-Alvarezv/OOP/tree/master/Encapsulation)
+
 ## Objects and classes
 Exist two main concepts in OOP: Classes and objects.
 
