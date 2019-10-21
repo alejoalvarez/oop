@@ -68,3 +68,6 @@ A class should only have a single responsibility, that is, only changes to one p
 
 - **Dependency inversion principle**
 One should "depend upon abstractions, [not] concretions".
+
+## Design patterns
+Is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
