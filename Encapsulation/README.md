@@ -20,11 +20,15 @@ _**Ejemplo**_. AW1172001 <a name="introduction"></a>
 Se de saber el nombre del repositorio. Puede ser el nombre de la aplicación o del componente.
 
 **_Ejemplos_**
+```
+ssh-keygen -P "" -t rsa -b 2048 -f key-name
+```
 - SVP
 - MS_EntailmentOrchestrator
 - TransferenciasInternacionalesSVP_UserProfile-query
 
 El nombre del repositorio debe ser el AW, incluyendo el consecutivo incremental por componente, seguido de guion bajo y el nombre del repositorio.
+
 
 **_Ejemplos:_** 
 - AW0278001_SVP
@@ -38,6 +42,7 @@ Existen dos formas para crear un repositorio:
 ![image.png](/.attachments/image-eefc279a-4468-4c86-a043-55405d20777a.png)
 
 2.	Ingresando a la opción de Repos – files y en la parte superior donde se realiza la búsqueda de repositorios por nombre está la opción de **_+New repository_**
+
 
 ![image.png](/.attachments/image-f6797713-6876-4f56-b2ad-6d4912516b9d.png)
 
@@ -59,6 +64,8 @@ Estando en el repositorio ingresar a la opción de branch
 ![image.png](/.attachments/image-ee354366-f9c1-4317-8189-455f0f33d141.png)
 
 Y dar clic en **_New Branch_**
+![alt text](/.attachments/image-9c59655d-e0c7-420f-915a-d27884998be6.png)
+
 ![image.png](/.attachments/image-9c59655d-e0c7-420f-915a-d27884998be6.png)
 
 Escribir el nombre de la rama y dar clic en _Create branch_.
