@@ -15,7 +15,7 @@ Object-oriented programming is based on the following principles:
 - **Encapsulation**
 The implementation and state of each object are privately held inside a defined boundary, or class. Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
 
-  [Example Encapsulation](https://github.com/Alejo-Alvarezv/OOP/tree/master/Encapsulation)
+  [Example Encapsulation](https://github.com/Alejo-Alvarezv/OOP/blob/master/Encapsulation/Recap.md)
 - **Abstraction**
 Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This concept helps developers make changes and additions over time more easily.
 
