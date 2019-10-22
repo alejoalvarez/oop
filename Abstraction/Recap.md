@@ -1,54 +1,33 @@
-## Encapsulation in Java
+## Abstraction in Java
 
-Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
+It is the process of hiding internal implementation details from the user and providing only necessary functionality to the users. It removes all non-essential things and shows only important things to users.
 
-Technically in encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through any member function of own class in which they are declared.
-As in encapsulation, the data in a class is hidden from other classes, so it is also known as **data-hiding**.
-Encapsulation can be achieved by: Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details.The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.
 
-The process of binding data and corresponding methods (behavior) together into a single unit is called encapsulation in Java. 
+In other words, Abstraction in Java is a technique by which we can hide the data that is not required to a user
 
-In other words, encapsulation is a programming technique that binds the class members (variables and methods) together and prevents them from being accessed by other classes, thereby we can keep variables and methods safes from outside interference and misuse.
+Example<br>
+We all use an ATM machine for cash withdrawal, money transfer, retrieve min-statement, etc in our daily life. But we don't know internally what things are happening inside ATM machine when you insert ATM card for performing any kind of operations.
 
-Every Java class is an example of encapsulation because we write everything within the class only that binds variables and methods together and hides their complexity from other classes.
+## Abstraction in java
 
-In the encapsulation technique, we declare the fields as private in the class to prevent other classes from accessing them directly. The required encapsulated data can be accessed by using public Java getter and setter method.
-
-If the field is declared private in the class then it cannot be accessed by anyone from outside the class and hides the field within the class. Therefore, it is also called data hiding. 
-
-## Encapsulation in java
-
-We can achieve encapsulation in Java in the following ways.
-- 1 Declaring the instance variable of the class as private. so that it cannot be accessed directly by anyone from outside the class.
-
-- 2 Provide the public setter and getter methods in the class to set/modify the values of the variable/fields.
+There are two ways to achieve abstraction in java. They are as follows:<br>
+  **1**. Abstract class (0 to 100%)<br>
+  **2**. Interface (100%)
 
 ### Advantages
 
-  **1**. The encapsulated code is more flexible and easy to change with new requirements.<br>
-  **2**. It prevents the other classes to access the private fields.<br>
-  **3**. Encapsulation allows modifying implemented code without breaking others code who have implemented the code.<br>
-  **4**. It keeps the data and codes safe from external inheritance. Thus, Encapsulation helps to achieve security.<br>
-  **5**. It improves the maintainability of the application.<br>
-  **6**. If you don't define the setter method in the class then the fields can be made read-only.<br>
-  **7**. If you don't define the getter method in the class then the fields can be made write-only<br>
+  **1**. It reduces the complexity of viewing the things.<br>
+  **2**. Avoids code duplication and increases reusability.<br>
+  **3**. Helps to increase security of an application or program as only important details are provided to the user.<br>
+  **4**. Programmer can implement abstract method to perform different tasks depending on the need. 
 
-### Disavantages
-The main disadvantage of the encapsulation in Java is it increases the length of the code and slow shutdown execution.
+### Abstract Class in Java
+An abstract class is a class, which is declared with ´abstract´ keyword. It is just like a normal class but has two differences. 
+ **1**. We cannot create an object of this class. Only objects of its non-abstract (or concrete) sub-classes can be created. 
+ **2**. It can have zero or more abstract methods which are not allowed in a non-abstract class (concrete class).
 
-### Tightly Encapsulated Class
-If each variable is declared as private in the class, it is called tightly encapsulated class in Java. For tightly encapsulated class, we are not required to check whether class contains getter and setter method or not and whether these methods are declared as public or not.
-
-For example: <br>
-public class Person { <br>
-private String name; <br>
-public String getName() <br>
-{<br>
-  return name; <br>
-} }<br>
-
-:bulb: Key points: <br>
-  **1**. It is highly recommended to declare data members as private in the class.<br>
-  **2**. A combination of data hiding and abstraction is nothing but encapsulation.
-        Encapsulation = Data Hiding + Abstraction <br>
-If any component follows data hiding and abstraction, it is called an encapsulated component.
+ :bulb: Key points: <br>
+  **1**. Abstract is a non-access modifier in java which is applicable for classes, interfaces, methods, and inner classes. It represents an incomplete class which depends on subclasses for its implementation. Creating subclass is compulsory for abstract class.<br>
+  **2**. A non-abstract class is sometimes called a concrete class.<br>
+  **3**. An abstract concept is not applicable to variables.
