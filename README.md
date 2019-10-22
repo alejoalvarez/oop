@@ -37,8 +37,40 @@ meaning or usage is necessary for each execution of that object, cutting down on
 ## Objects and classes
 Exist two main concepts in OOP: Classes and objects.
 
-**Classes**: Is a template that allow to create object, containt the definition of attributes and the procedure for the class
-**Objects**: Instances of clases
+**Classes**: <br>
+Is a template that allow to create object, containt the definition of attributes and the procedure for the class
+
+  A class is a user defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order:
+  - **Modifiers**: A class can be public or has default access (Refer this for details).
+  - **Class name**: The name should begin with a initial letter (capitalized by convention).
+  - **Superclass(if any)**: The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+  - **Interfaces(if any)**: A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+  - **Body**: The class body surrounded by braces, { }.
+  
+**Objects**: <br>
+Instances of clases
+
+  It is a basic unit of Object Oriented Programming and represents the real life entities. A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of:<br>
+  - **State** : It is represented by attributes of an object. It also reflects the properties of an object.
+  - **Behavior** : It is represented by methods of an object. It also reflects the response of an object with other objects.
+  - **Identity** : It gives a unique name to an object and enables one object to interact with other objects.
+
+**Method**: <br>
+  A method is a collection of statements that perform some specific task and return result to the caller. A method can perform some specific task without returning anything. Methods allow us to reuse the code without retyping the code. In Java, every method must be part of some class which is different from languages like C, C++ and Python.
+Methods are time savers and help us to reuse the code without retyping the code.
+
+  Method Declaration: In general, method declarations has six components:
+
+  - **Access Modifier**: Defines access type of the method i.e. from where it can be accessed in your application. In Java, there 4 type of the access specifiers.<br>
+    - **public**: accessible in all class in your application.<br>
+    - **protected**: accessible within the package in which it is defined and in its subclass(es)(including subclasses declared outside the package)<br>
+    - **private**: accessible only within the class in which it is defined.<br>
+    - **default** (declared/defined without using any modifier): accessible within same class and package within which its class is defined.<br<
+  - **The return type**: The data type of the value returned by the method or void if does not return a value.
+  - **Method Name**: the rules for field names apply to method names as well, but the convention is a little different.
+  - **Parameter list**: Comma separated list of the input parameters are defined, preceded with their data type, within the enclosed parenthesis. If there are no parameters, you must use empty parentheses ().
+  - **Exception list**: The exceptions you expect by the method can throw, you can specify these exception(s).
+  - **Method body**: it is enclosed between braces. The code you need to be executed to perform your intended operations.
 
 Example:
 
@@ -56,7 +88,7 @@ Example:
 We have two object with the same definition of class (or template) but with diferent information
 
 
-### SOLID
+## SOLID
 Five design principles intended to make software designs more understandable, flexible and maintainable
 Single responsibility principle
 A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
