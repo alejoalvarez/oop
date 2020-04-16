@@ -10,6 +10,8 @@ Simply put, OOP focuses on the objects that developers want to manipulate rather
 OOP was developed to increase the reusability and maintainability of source code. Transparent representation of the control flow had no priority and was meant to be handled by a compiler. With the increasing relevance of parallel hardware and multithreaded coding, developing transparent control flow becomes more important, something hard to achieve with OOP
 
 ## Principles of OOP
+![](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/Pillar-OOP.jpg)
+
 Object Oriented Programming is based on the following principles:
 
 - **Encapsulation**
@@ -76,6 +78,8 @@ Methods are time savers and help us to reuse the code without retyping the code.
 
 [View complete definition](https://github.com/Alejo-Alvarezv/SOLID)
 
+![alt text](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/SOLID.jpg "SOLID")
+
 Five design principles intended to make software designs more understandable, flexible and maintainable.
 
 - **Single responsibility principle**
@@ -95,5 +99,7 @@ One should "depend upon abstractions, [not] concretions".
 
 ## Design patterns
 [View complete definition](https://github.com/Alejo-Alvarezv/DesingPatterns)
+
+![alt text](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/DesignPatterns.png "Design Patterns")
 
 Is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
