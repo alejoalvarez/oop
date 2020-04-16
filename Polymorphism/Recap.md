@@ -1,10 +1,12 @@
 ## Polymorphism
 
+![](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/polymorphism.png)
+
 Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently. This is done by Java with the help of the signature and declaration of these entities.
 
 Polymorphism in Java are mainly of 2 types:
 
-- **Overloading**(Compile time Polymorphism)
+- **Overloading** (Compile time Polymorphism)
 
   Overloading allows different methods to have the same name, but different signatures where the signature can differ by the number of input parameters or type of input parameters or both. Overloading is related to compile-time (or static) polymorphism.
 
