@@ -1,4 +1,6 @@
-## Encapsulation in Java
+## Encapsulation
+
+![](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/encapsulation.png)
 
 Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
 
@@ -39,15 +41,7 @@ The main disadvantage of the encapsulation in Java is it increases the length of
 ### Tightly Encapsulated Class
 If each variable is declared as private in the class, it is called tightly encapsulated class in Java. For tightly encapsulated class, we are not required to check whether class contains getter and setter method or not and whether these methods are declared as public or not.
 
-For example: <br>
-public class Person { <br>
-private String name; <br>
-public String getName() <br>
-{<br>
-  return name; <br>
-} }<br>
-
-:bulb: Key points: <br>
+:bulb: **Key points:** <br>
   **1**. It is highly recommended to declare data members as private in the class.<br>
   **2**. A combination of data hiding and abstraction is nothing but encapsulation.
         Encapsulation = Data Hiding + Abstraction <br>
