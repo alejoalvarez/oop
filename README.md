@@ -27,6 +27,8 @@ Objects only reveal internal mechanisms that are relevant for the use of other o
 - **Inheritance**
 Relationships and subclasses between objects can be assigned, allowing developers to reuse a common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
 
+  [Example Inheritance](https://github.com/Alejo-Alvarezv/OOP/tree/master/Inheritance)
+
 - **Polymorphism**
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
 meaning or usage is necessary for each execution of that object, cutting down on the need to duplicate code.
