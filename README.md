@@ -1,5 +1,5 @@
 # OOP
-Object Oriented Programming (OOP)
+## Object Oriented Programming
 
 Is a programming paradigm in which programs are organized around data, or based on the concept "objects", rather than functions and logic.
 
@@ -10,7 +10,7 @@ Simply put, OOP focuses on the objects that developers want to manipulate rather
 OOP was developed to increase the reusability and maintainability of source code. Transparent representation of the control flow had no priority and was meant to be handled by a compiler. With the increasing relevance of parallel hardware and multithreaded coding, developing transparent control flow becomes more important, something hard to achieve with OOP
 
 ## Principles of OOP
-Object-oriented programming is based on the following principles:
+Object Oriented Programming is based on the following principles:
 
 - **Encapsulation**
 The implementation and state of each object are privately held inside a defined boundary, or class. Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
@@ -29,7 +29,7 @@ Relationships and subclasses between objects can be assigned, allowing developer
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
 meaning or usage is necessary for each execution of that object, cutting down on the need to duplicate code.
 
-  Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently. This is done by Java with the help of the signature and declaration of these entities.
+  Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently.
 
   [Example Polymorphism](https://github.com/Alejo-Alvarezv/OOP/blob/master/Polymorphism/Recap.md)
 
@@ -72,25 +72,13 @@ Methods are time savers and help us to reuse the code without retyping the code.
   - **Exception list**: The exceptions you expect by the method can throw, you can specify these exception(s).
   - **Method body**: it is enclosed between braces. The code you need to be executed to perform your intended operations.
 
-Example:
-
-**Class** Person
-
-**Attributes**: name, last name, phone, address
-**Methods**: getName, getLastName, getPhone, getAddress
-
-**Objects**
-
-- **Object 1** => name:Alejo, last name: Vargas Alvarez, phone: 0000000, address: Street 1234
-
-- **Object 2** => name:Juan,  last name: Restrepo Perez, phone: 1111111, address: Street 2345.
-
-We have two object with the same definition of class (or template) but with diferent information
-
-
 ## SOLID
-Five design principles intended to make software designs more understandable, flexible and maintainable
-Single responsibility principle
+
+[View complete definition](https://github.com/Alejo-Alvarezv/SOLID)
+
+Five design principles intended to make software designs more understandable, flexible and maintainable.
+
+- **Single responsibility principle**
 A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
 
 - **Open/closed principle**
@@ -106,4 +94,6 @@ A class should only have a single responsibility, that is, only changes to one p
 One should "depend upon abstractions, [not] concretions".
 
 ## Design patterns
+[View complete definition](https://github.com/Alejo-Alvarezv/DesingPatterns)
+
 Is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
