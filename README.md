@@ -83,7 +83,7 @@ Methods are time savers and help us to reuse the code without retyping the code.
     - **public**: accessible in all class in your application.<br>
     - **protected**: accessible within the package in which it is defined and in its subclass(es)(including subclasses declared outside the package)<br>
     - **private**: accessible only within the class in which it is defined.<br>
-    - **default** (declared/defined without using any modifier): accessible within same class and package within which its class is defined.<br<
+    - **default** (declared/defined without using any modifier): accessible within same class and package within which its class is defined.<br>
   - **The return type**: The data type of the value returned by the method or void if does not return a value.
   - **Method Name**: the rules for field names apply to method names as well, but the convention is a little different.
   - **Parameter list**: Comma separated list of the input parameters are defined, preceded with their data type, within the enclosed parenthesis. If there are no parameters, you must use empty parentheses ().
