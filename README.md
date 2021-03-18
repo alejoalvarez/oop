@@ -14,7 +14,7 @@ OOP was developed to increase the reusability and maintainability of source code
 
 **Object Oriented Programming is based on the following principles**:
 
-- **Encapsulation**
+- ```Encapsulation```
 The implementation and state of each object are privately held inside a defined boundary, or class.
 
 Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
