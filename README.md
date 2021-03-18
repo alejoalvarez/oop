@@ -1,5 +1,4 @@
-# OOP
-## Object Oriented Programming
+# OOP - Object Oriented Programming
 
 Is a programming paradigm in which programs are organized around data, or based on the concept "objects", rather than functions and logic.
 
