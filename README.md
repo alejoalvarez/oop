@@ -61,7 +61,47 @@ The meaning of **Encapsulation**, is to make sure that "sensitive" data is hidde
   [See more about Encapsulation](https://github.com/Alejo-Alvarezv/OOP/blob/master/Encapsulation)
  
 ```Abstraction```
+Abstract Classes and Methods
+
 Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This concept helps developers make changes and additions over time more easily.
+
+Data abstraction is the process of hiding certain details and showing only essential information to the user.
+Abstraction can be achieved with either abstract classes or interfaces (which you will learn more about in the next chapter).
+
+- **Abstract class**: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+- **Abstract method**: can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from).
+
+An abstract class can have both abstract and regular methods:
+
+Example:
+```java
+// Abstract class
+abstract class Animal {
+  // Abstract method (does not have a body)
+  public abstract void sound();
+  // Regular method
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}
+
+// Subclass (inherit from Animal)
+class Cat extends Animal {
+  public void sound() {
+    // The body of sound() is provided here
+    System.out.println("The cat says: Miau");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Cat myCat = new Cat(); // Create a Cat object
+    myCat.animalSound();
+    myCat.sleep();
+  }
+}
+```
+
 
   [See more about Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
 
@@ -112,7 +152,48 @@ class Car extends Vehicle {
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
 meaning or usage is necessary for each execution of that object, cutting down on the need to duplicate code.
 
-  Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently.
+Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently.
+
+Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.
+
+Like we specified in the previous chapter; Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways
+
+Example 
+
+```java
+class Animal {
+  public void animalSound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Cat extends Animal {
+  public void animalSound() {
+    System.out.println("The cat says: Miau");
+  }
+}
+
+class Dog extends Animal {
+  public void animalSound() {
+    System.out.println("The dog says: Guau");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myCat = new Cat();  // Create a Cat object
+    Animal myDog = new Dog();  // Create a Dog object
+    myAnimal.animalSound();
+    myCat.animalSound();
+    myDog.animalSound();
+  }
+}
+```
+
+**Why And When To Use "Inheritance" and "Polymorphism"?**
+
+It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
   [See more about Polymorphism](https://github.com/Alejo-Alvarezv/OOP/blob/master/Polymorphism)
 
