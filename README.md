@@ -102,7 +102,6 @@ class Main {
 }
 ```
 
-
   [See more about Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
 
 ```Inheritance```
@@ -142,6 +141,7 @@ class Car extends Vehicle {
   }
 }
 ```
+
 **Why And When To Use "Inheritance"?**
 
 - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
@@ -201,10 +201,21 @@ It is useful for code reusability: reuse attributes and methods of an existing c
 ## Objects and classes
 Exist two main concepts in OOP: Classes and objects.
 
-**Classes**: <br>
+**Classes**:
+
 Is a template that allow to create object, containt the definition of attributes and the procedure for the class
 
-  A class is a user defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order:
+- They are used to represent entities or concepts
+- Each object created from a class is called an instance of the class
+- Has methods (Performs a task)
+- It has attributes, by convention they must be private
+- The name must begin with a capital letter
+
+**Static class:** 
+- No need to create instances to call them
+- Only static methods can be called
+
+A class is a user defined blueprint or prototype from which objects are created. It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order:
   - **Modifiers**: A class can be public or has default access (Refer this for details).
   - **Class name**: The name should begin with a initial letter (capitalized by convention).
   - **Superclass(if any)**: The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
@@ -212,7 +223,10 @@ Is a template that allow to create object, containt the definition of attributes
   - **Body**: The class body surrounded by braces, { }.
   
 **Objects**: <br>
-Instances of clases
+- Instances of clases
+- Object = instance
+
+An instance is created so you can use the methods that that class defines.
 
   It is a basic unit of Object Oriented Programming and represents the real life entities. A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of:<br>
   - **State** : It is represented by attributes of an object. It also reflects the properties of an object.
@@ -235,6 +249,20 @@ Methods are time savers and help us to reuse the code without retyping the code.
   - **Parameter list**: Comma separated list of the input parameters are defined, preceded with their data type, within the enclosed parenthesis. If there are no parameters, you must use empty parentheses ().
   - **Exception list**: The exceptions you expect by the method can throw, you can specify these exception(s).
   - **Method body**: it is enclosed between braces. The code you need to be executed to perform your intended operations.
+
+### Constructor
+
+- Create the class
+- Has the same name as the class
+- The default classes are created with an empty constructor
+- Occurs when an object of the type defined by the class is created
+- It helps us to initialize an object
+- Class method
+
+<p align="center">
+<img height="270" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/constructors.jpeg">
+</p>
+
 
 ## Interface
 
