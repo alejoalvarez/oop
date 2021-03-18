@@ -12,22 +12,36 @@ OOP was developed to increase the reusability and maintainability of source code
 ## Principles of OOP
 ![](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/Pillar-OOP.jpg)
 
-Object Oriented Programming is based on the following principles:
+**Object Oriented Programming is based on the following principles**:
 
 - **Encapsulation**
-The implementation and state of each object are privately held inside a defined boundary, or class. Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
+The implementation and state of each object are privately held inside a defined boundary, or class.
 
-  [Example Encapsulation](https://github.com/Alejo-Alvarezv/OOP/blob/master/Encapsulation)
+Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
+
+The meaning of **Encapsulation**, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+
+- declare class variables/attributes as ```private```
+- provide public get and set methods to access and update the value of a ```private``` variable
+
+  [See more about Encapsulation](https://github.com/Alejo-Alvarezv/OOP/blob/master/Encapsulation)
   
+Why Encapsulation?
+ 
+- Better control of class attributes and methods
+- Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)
+- Flexible: the programmer can change one part of the code without affecting other parts
+- Increased security of data
+ 
 - **Abstraction**
 Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This concept helps developers make changes and additions over time more easily.
 
-  [Example Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
+  [See more about Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
 
 - **Inheritance**
 Relationships and subclasses between objects can be assigned, allowing developers to reuse a common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
 
-  [Example Inheritance](https://github.com/Alejo-Alvarezv/OOP/tree/master/Inheritance)
+  [See more about Inheritance](https://github.com/Alejo-Alvarezv/OOP/tree/master/Inheritance)
 
 - **Polymorphism**
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
@@ -35,7 +49,7 @@ meaning or usage is necessary for each execution of that object, cutting down on
 
   Refers to the ability of OOPs programming languages to differentiate between entities with the same name efficiently.
 
-  [Example Polymorphism](https://github.com/Alejo-Alvarezv/OOP/blob/master/Polymorphism)
+  [See more about Polymorphism](https://github.com/Alejo-Alvarezv/OOP/blob/master/Polymorphism)
 
 
 ## Objects and classes
