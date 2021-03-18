@@ -1,6 +1,9 @@
 ## Encapsulation
 
-![](https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/encapsulation.png)
+
+<p align="center">
+<img height="270" src="https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/encapsulation.png">
+</p>
 
 Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
 
