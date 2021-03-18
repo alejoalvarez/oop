@@ -24,7 +24,7 @@ The meaning of **Encapsulation**, is to make sure that "sensitive" data is hidde
 - declare class variables/attributes as ```private```
 - provide public get and set methods to access and update the value of a ```private``` variable
   
-  Why Encapsulation?
+  **Why Encapsulation?**
  
 - Better control of class attributes and methods
 - Class attributes can be made read-only (if you only use the get method), or write-only (if you only use the set method)
