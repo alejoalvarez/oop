@@ -66,7 +66,45 @@ Objects only reveal internal mechanisms that are relevant for the use of other o
   [See more about Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
 
 ```Inheritance```
+Subclass and superclass
+
 Relationships and subclasses between objects can be assigned, allowing developers to reuse a common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
+
+Is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
+
+  - **subclass** (child) - the class that inherits from another class
+  - **superclass** (parent) - the class being inherited from
+
+To inherit from a class, use the ```extends``` keyword.
+
+Example
+
+```java
+class Vehicle {
+  protected String brand = "Audi";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mercedez";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}
+```
+**Why And When To Use "Inheritance"?**
+
+- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
   [See more about Inheritance](https://github.com/Alejo-Alvarezv/OOP/tree/master/Inheritance)
 
