@@ -1,10 +1,11 @@
 
 # Table of Contents
-1. [bject Oriented Programming](#OOP)
+1. [Object Oriented Programming](#OOP)
 2. [Principles of OOP](#principles-OOP)
     -  [Encapsulation](#encapsulation)
     -  [Abstraction](#abstraction) 
     -  [Inheritance](#inheritance)
+    -  [Polymorphism](#polymorphism)
     -  [Coupling](#coupling)
     -  [Cohesion](#cohesion)
     -  [Association](#association)
@@ -14,6 +15,9 @@
     -  [Classes](#classes)
     -  [Objects](#objects)
     -  [Methods](#method)
+        -  [Constructor](#constructor)
+    -  [static](#static)
+    -  [this](#this)
 4. [Interface](#interface)
      -  [Multiple interface](#multiple-interface)
 5. [SOLID](#solid)
@@ -168,7 +172,7 @@ class Car extends Vehicle {
 
   [See more about Inheritance](https://github.com/Alejo-Alvarezv/OOP/tree/master/Inheritance)
 
-```Polymorphism```
+### ```Polymorphism``` <a name="polymorphism"></a>
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
 meaning or usage is necessary for each execution of that object, cutting down on the need to duplicate code.
 
@@ -282,7 +286,7 @@ An instance is created so you can use the methods that that class defines.
 A method is a collection of statements that perform some specific task and return result to the caller. A method can perform some specific task without returning anything. Methods allow us to reuse the code without retyping the code. In Java, every method must be part of some class which is different from languages like C, C++ and Python.
 Methods are time savers and help us to reuse the code without retyping the code.
 
-  Method Declaration: In general, method declarations has six components:
+Method Declaration: In general, method declarations has six components:
 
   - **Access Modifier**: Defines access type of the method i.e. from where it can be accessed in your application. In Java, there 4 type of the access specifiers.<br>
     - **public**: accessible in all class in your application.<br>
@@ -295,7 +299,109 @@ Methods are time savers and help us to reuse the code without retyping the code.
   - **Exception list**: The exceptions you expect by the method can throw, you can specify these exception(s).
   - **Method body**: it is enclosed between braces. The code you need to be executed to perform your intended operations.
 
-**Constructor**
+**Ways to initialize object**
+
+There are 3 ways to initialize object in Java.
+
+- By reference variable
+- By method
+- By constructor
+
+```Initialization through reference:```
+Initializing an object means storing data into the object. Let's see a simple example where we are going to initialize the object through a reference variable.
+
+```java
+class Student{  
+ int id;  
+ String name;  
+}  
+
+class Main{  
+ public static void main(String args[]){  
+  Student student1 = new Student();  
+  student1.id=1;  
+  student1.name="Alejo";  
+  System.out.println(student1.id + " " + student1.name);
+ }  
+} 
+```
+
+```Initialization through method:```
+
+We are creating the two objects of Student class and initializing the value to these objects by invoking the insertInformation method. Here, we are displaying the state (data) of the objects by invoking the printInformation() method.
+
+```java
+class Student{  
+ int id;  
+ String name;  
+
+ void insertInformation(int r, String n){  
+  id=r;  
+  name=n;  
+ }  
+ void printInformation(){
+   System.out.println(id + " " + name);
+   }  
+}  
+
+class Main{  
+ public static void main(String args[]){  
+  Student student1=new Student();  
+  Student student2=new Student();  
+  student1.insertInformation(1,"Alejo");  
+  student2.insertInformation(2,"Alejo 1");  
+  student1.printInformation();  
+  student2.printInformation();  
+ }  
+}  
+```
+As you can see in the above figure, object gets the memory in heap memory area. The reference variable refers to the object allocated in the heap memory area. Here, s1 and s2 both are reference variables that refer to the objects allocated in memory.
+
+```Initialization through a constructor:```
+
+```java
+class Employee{  
+    int id;  
+    String name;  
+    float salary; 
+
+    void insertInformation(int i, String n, float s) {  
+        id=i;  
+        name=n;  
+        salary=s;  
+    }  
+    void prprintInformationint(){
+      System.out.println(id + " " + name + " " + salary);
+    }  
+}  
+
+public class TestEmployee {  
+public static void main(String[] args) {  
+    Employee employee1=new Employee();  
+    Employee employee2=new Employee();  
+      
+    employee1.insertInformation(1,"Alejo 1",45000);  
+    employee2.insertInformation(2,"Alejo 2",25000);  
+  
+    employee1.printInformation();  
+    employee2.printInformation();      
+}  
+} 
+```
+
+#### Constructor <a name="constructor"></a>
+
+In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+It is a special type of method which is used to initialize the object.
+
+Every time an object is created using the new() keyword, at least one constructor is called.
+
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default.
+
+There are two types of constructors in Java: no-arg constructor, and parameterized constructor.
+
+Note: It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.
 
 - Create the class
 - Has the same name as the class
@@ -304,9 +410,352 @@ Methods are time savers and help us to reuse the code without retyping the code.
 - It helps us to initialize an object
 - Class method
 
+There are two rules defined for the constructor.
+
+- Constructor name must be the same as its class name
+- A Constructor must have no explicit return type
+- A Java constructor cannot be abstract, static, final, and synchronized
+
 <p align="center">
 <img height="270" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/constructors.jpeg">
 </p>
+
+### static <a name="static"></a>
+
+The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class.
+
+The static can be:
+
+- Variable (also known as a class variable)
+- Method (also known as a class method)
+- Block
+- Nested class
+
+**static variable**
+
+If you declare any variable as static, it is known as a static variable.
+
+- The static variable can be used to refer to the common property of all objects (which is not unique for each object), for example, the company name of employees, college name of students, etc.
+- The static variable gets memory only once in the class area at the time of class loading.
+
+Advantages of static variable
+It makes your program memory efficient (i.e., it saves memory).
+
+```java
+class Student{  
+   int id;//instance variable  
+   String name;  
+   static String college ="TEST";//static variable  
+     
+   Student(int i, String n){  
+   id = i;  
+   name = n;  
+   }  
+   //method to display the values  
+   void printInformation (){
+     System.out.println(id + " " + name + " " + college);
+    }  
+}  
+//Test class to show the values of objects  
+public class TestStaticVariable1{  
+ public static void main(String args[]){  
+ Student student1 = new Student(111,"Alejo 1");  
+ Student student2 = new Student(222,"Alejo 2");  
+ //we can change the college of all objects by the single line of code  
+ //Student.college="TEST";  
+ student1.printInformation();  
+ student2.printInformation();  
+ }  
+} 
+```
+
+**static method**
+
+If you apply static keyword with any method, it is known as static method.
+
+- A static method belongs to the class rather than the object of a class.
+- A static method can be invoked without the need for creating an instance of a class.
+- A static method can access static data member and can change the value of it.
+
+```java
+class Student{  
+     int id;  
+     String name;  
+     static String college = "TEST";  
+     
+     //static method to change the value of static variable  
+     static void change(){  
+      college = "TEST2";  
+     }  
+     
+     
+     Student(int i, String n){  
+      id = r;  
+      name = n;  
+     }  
+     
+     void printInformation(){
+       System.out.println(id + " " + name + " " + college);
+      }  
+}  
+//Test class to create and display the values of object  
+public class TestStaticMethod{  
+    public static void main(String args[]){  
+      Student.change();//calling change method  
+      
+      Student student1 = new Student(111,"Alejo1");  
+      Student student2 = new Student(222,"Alejo2");          
+      
+      s1.printInformation();  
+      s2.printInformation();  
+      s3.printInformation();  
+    }  
+}
+```
+There are two main restrictions for the static method. They are:
+
+- The static method can not use non static data member or call non-static method directly.
+- this and super cannot be used in static context.
+
+```Why is the Java main method static?```
+It is because the object is not required to call a static method. If it were a non-static method, JVM creates an object first then call main() method that will lead the problem of extra memory allocation.
+
+**static  block**
+- Is used to initialize the static data member.
+- It is executed before the main method at the time of classloading.
+
+```java
+class Main{  
+  static{
+    System.out.println("static block is invoked");
+  }  
+  
+  public static void main(String args[]){  
+   System.out.println("Hello main");  
+  }  
+}  
+```
+
+```sh
+Output:static block is invoked
+       Hello main
+```
+
+```Can we execute a program without main() method?```
+No, one of the ways was the static block, but it was possible till JDK 1.6. Since JDK 1.7, it is not possible to execute a Java class without the main method.
+
+### this
+
+There can be a lot of usage of java this keyword. In java, this is a reference variable that refers to the current object.
+
+Here is given the 6 usage of java this keyword.
+
+- **this** can be used to refer current class instance variable.
+- **this** can be used to invoke current class method (implicitly)
+- **this()** can be used to invoke current class constructor.
+- **this** can be passed as an argument in the method call.
+- **this** can be passed as argument in the constructor call.
+- **this** can be used to return the current class instance from the method.
+
+
+**(this) refer current class instance variable.**
+
+The this keyword can be used to refer current class instance variable. If there is ambiguity between the instance variables and parameters, this keyword resolves the problem of ambiguity.
+
+```java
+class Student{  
+  int id;  
+  String name;  
+  float fee;  
+
+  Student(int id,String name,float fee){  
+    this.id = id;  
+    this.name = name;  
+    this.fee = fee;  
+  }  
+
+  void printInformation(){
+    System.out.println(id + " " + name + " " + fee);
+  }
+}  
+    
+  class TestThis2{  
+  public static void main(String args[]){  
+    Student student1=new Student(111,"Alejo1",5000f);  
+    Student student2=new Student(22,"Alejo2",6000f);  
+    student1.printInformation();  
+    student2.printInformation();  
+  }
+}  
+```
+
+**(this) to invoke current class method**
+You may invoke the method of the current class by using the this keyword. If you don't use the this keyword, compiler automatically adds this keyword while invoking the method. Let's see the example
+
+```java
+class Example{  
+  void sayHelllo1(){
+    System.out.println("hello 1");
+  }  
+  
+  void sayHello2(){  
+  System.out.println("hello 2");  
+  //m();//same as this.m()  
+  this.m();  
+  }  
+}  
+
+class TestThis4{  
+  public static void main(String args[]){  
+  Example example=new Example();  
+  example.sayHelllo2();  
+  }
+} 
+
+//RESULT
+hello 2
+hello 1
+```
+**(this) to invoke current class constructor**
+
+The this() constructor call can be used to invoke the current class constructor. It is used to reuse the constructor. In other words, it is used for constructor chaining.
+
+```java
+class Example{  
+  Example(){
+    System.out.println("hello 1");
+  }  
+  
+  Example(int x){  
+  this();  
+  System.out.println(x);  
+  }  
+  
+}  
+class TestThis5{  
+  public static void main(String args[]){  
+    Example example = new Example(10);  
+  }
+}
+
+//RESULT
+hello 1
+10
+```
+
+Real example
+```java
+class Student{  
+  int id;  
+  String name,course;  
+  float fee;  
+
+  Student(int id,String name,String course){  
+  this.id=id;  
+  this.name=name;  
+  this.course=course;  
+  }  
+
+  Student(int id,String name,String course,float fee){  
+  this(id,name,course);//reusing constructor  
+  this.fee=fee;  
+  }  
+
+  void printInformation(){
+    System.out.println(id + " " + name + " " + course + " " + fee);
+  }
+
+}  
+  class TestThis7{  
+  public static void main(String args[]){  
+    Student student1=new Student(111,"Alejo1","java1");  
+    Student student2=new Student(112,"sumit","java2",6000f);  
+    student1.printInformation();  
+    student2.printInformation();  
+  }
+} 
+```
+
+**(this) to pass as an argument in the method**
+
+The this keyword can also be passed as an argument in the method. It is mainly used in the event handling. Let's see the example:
+
+```java
+class Example{  
+  void printInformation(Example obj){  
+    System.out.println("method is invoked");  
+  }  
+
+  void process(){  
+    printInformation(this);  
+  }  
+  public static void main(String args[]){  
+    Example example1 = new Example();  
+    example1.process();  
+  }  
+}
+
+//RESULT 
+method is invoked
+```
+
+**(this) to pass as argument in the constructor call**
+
+We can pass the this keyword in the constructor also. It is useful if we have to use one object in multiple classes. Let's see the example:
+
+```java
+class B{  
+  A4 obj;  
+  B(A4 obj){  
+    this.obj=obj;  
+  }  
+  void display(){  
+    System.out.println(obj.data);//using data member of A4 class  
+  }  
+}  
+  
+class A4{  
+  int data=10;  
+  A4(){  
+   B b=new B(this);  
+   b.display();  
+  }  
+  public static void main(String args[]){  
+   A4 a=new A4();  
+  }  
+}  
+
+//RESULT
+10
+```
+
+**(this) keyword can be used to return current class instance**
+
+We can return this keyword as an statement from the method. In such case, return type of the method must be the class type (non-primitive). Let's see the example:
+
+```java
+class A{  
+  A getA(){  
+    return this;  
+  } 
+
+  void msg(){
+    System.out.println("Hello java");
+  }
+
+} 
+  class Test1{  
+    public static void main(String args[]){  
+    new A().getA().msg();  
+  }  
+}  
+
+//RESULT
+
+Hello java
+```
+
+
 
 
 ## Interface <a name="interface"></a>
