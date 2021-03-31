@@ -1,4 +1,24 @@
-# OOP - Object Oriented Programming
+
+# Table of Contents
+1. [bject Oriented Programming](#OOP)
+2. [Principles of OOP](#principles-OOP)
+    -  [Encapsulation](#encapsulation)
+    -  [Abstraction](#abstraction) 
+    -  [Inheritance](#inheritance)
+    -  [Coupling](#coupling)
+    -  [Cohesion](#cohesion)
+    -  [Association](#association)
+    -  [Aggregation](#aggregation)
+    -  [Composition](#composition)
+3. [Object and Clases](#objects-classes)
+    -  [Classes](#classes)
+    -  [Objects](#objects)
+    -  [Methods](#method)
+4. [Interface](#interface)
+     -  [Multiple interface](#multiple-interface)
+5. [SOLID](#solid)
+
+## OOP - Object Oriented Programming <a name="OOP"></a>
 
 Is a programming paradigm in which programs are organized around data, or based on the concept "objects", rather than functions and logic.
 
@@ -8,14 +28,14 @@ Simply put, OOP focuses on the objects that developers want to manipulate rather
 
 OOP was developed to increase the reusability and maintainability of source code. Transparent representation of the control flow had no priority and was meant to be handled by a compiler. With the increasing relevance of parallel hardware and multithreaded coding, developing transparent control flow becomes more important, something hard to achieve with OOP
 
-## Principles of OOP
+## Principles of OOP <a name="principles-OOP"></a>
 <p align="center">
 <img src="https://github.com/Alejo-Alvarezv/OOP/blob/master/Images/Pillar-OOP.jpg">
 </p>
 
 **Object Oriented Programming is based on the following principles**:
 
-```Encapsulation```
+### ```Encapsulation``` <a name="encapsulation"></a>
 The implementation and state of each object are privately held inside a defined boundary, or class.
 
 Other objects do not have access to this class or the authority to make changes but are only able to call a list of public functions, or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
@@ -59,8 +79,8 @@ The meaning of **Encapsulation**, is to make sure that "sensitive" data is hidde
   - Increased security of data
 
   [See more about Encapsulation](https://github.com/Alejo-Alvarezv/OOP/blob/master/Encapsulation)
- 
-```Abstraction```
+   
+### ```Abstraction``` <a name="abstraction"></a>
 Abstract Classes and Methods
 
 Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. This concept helps developers make changes and additions over time more easily.
@@ -104,7 +124,7 @@ class Main {
 
   [See more about Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
 
-```Inheritance```
+### ```Inheritance``` <a name="inheritance"></a>
 Subclass and superclass
 
 Relationships and subclasses between objects can be assigned, allowing developers to reuse a common logic while still maintaining a unique hierarchy. This property of OOP forces a more thorough data analysis, reduces development time and ensures a higher level of accuracy.
@@ -198,13 +218,13 @@ It is useful for code reusability: reuse attributes and methods of an existing c
   [See more about Polymorphism](https://github.com/Alejo-Alvarezv/OOP/blob/master/Polymorphism)
 
 
-**Coupling**
+### Coupling <a name="coupling"></a>
 Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
 
-**Cohesion**
+### Cohesion <a name="cohesion"></a>
 Cohesion refers to the level of a component which performs a single well-defined task. A single well-defined task is done by a highly cohesive method. The weakly cohesive method will split the task into separate parts. The java.io package is a highly cohesive package because it has I/O related classes and interface. However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.
 
-**Association**
+### Association <a name="association"></a>
 Association represents the relationship between the objects. Here, one object can be associated with one object or many objects. There can be four types of association between the objects:
 
 - One to One
@@ -216,16 +236,16 @@ Let's understand the relationship with real-time examples. For example, One coun
 
 Association can be undirectional or bidirectional.
 
-**Aggregation**
+### Aggregation <a name="aggregation"></a>
 Aggregation is a way to achieve Association. Aggregation represents the relationship where one object contains other objects as a part of its state. It represents the weak relationship between objects. It is also termed as a has-a relationship in Java. Like, inheritance represents the is-a relationship. It is another way to reuse objects.
 
-**Composition**
+### Composition <a name="composition"></a>
 The composition is also a way to achieve Association. The composition represents the relationship where one object contains other objects as a part of its state. There is a strong relationship between the containing object and the dependent object. It is the state where containing objects do not have an independent existence. If you delete the parent object, all the child objects will be deleted automatically.
 
-## Objects and classes
+## Objects and classes  <a name="objects-classes"></a>
 Exist two main concepts in OOP: Classes and objects.
 
-**Classes**:
+### Classes: <a name="classes"></a>
 
 Is a template that allow to create object, containt the definition of attributes and the procedure for the class
 
@@ -246,7 +266,7 @@ A class is a user defined blueprint or prototype from which objects are created.
   - **Interfaces(if any)**: A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
   - **Body**: The class body surrounded by braces, { }.
   
-**Objects**: <br>
+### **Objects**: <a name="objects"></a>
 - Instances of clases
 - Object = instance
 
@@ -257,8 +277,9 @@ An instance is created so you can use the methods that that class defines.
   - **Behavior** : It is represented by methods of an object. It also reflects the response of an object with other objects.
   - **Identity** : It gives a unique name to an object and enables one object to interact with other objects.
 
-**Method**: <br>
-  A method is a collection of statements that perform some specific task and return result to the caller. A method can perform some specific task without returning anything. Methods allow us to reuse the code without retyping the code. In Java, every method must be part of some class which is different from languages like C, C++ and Python.
+### Method: <a name="method"></a>
+
+A method is a collection of statements that perform some specific task and return result to the caller. A method can perform some specific task without returning anything. Methods allow us to reuse the code without retyping the code. In Java, every method must be part of some class which is different from languages like C, C++ and Python.
 Methods are time savers and help us to reuse the code without retyping the code.
 
   Method Declaration: In general, method declarations has six components:
@@ -274,7 +295,7 @@ Methods are time savers and help us to reuse the code without retyping the code.
   - **Exception list**: The exceptions you expect by the method can throw, you can specify these exception(s).
   - **Method body**: it is enclosed between braces. The code you need to be executed to perform your intended operations.
 
-### Constructor
+**Constructor**
 
 - Create the class
 - Has the same name as the class
@@ -288,7 +309,7 @@ Methods are time savers and help us to reuse the code without retyping the code.
 </p>
 
 
-## Interface
+## Interface <a name="interface"></a>
 
 Another way to achieve abstraction in Java, is with interfaces.
 
@@ -324,7 +345,7 @@ class Main {
 }
 ```
 
-### Multiple Interfaces
+### Multiple Interfaces <a name="multiple-interface"></a>
 
 Example:
 
@@ -369,7 +390,7 @@ class Main {
 
   2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).
 
-## SOLID
+## SOLID <a name="solid"></a>
 <p align="center">
 <img src="https://github.com/Alejo-Alvarezv/SOLID">
 </p>
