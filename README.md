@@ -755,9 +755,6 @@ class A{
 Hello java
 ```
 
-
-
-
 ## Interface <a name="interface"></a>
 
 Another way to achieve abstraction in Java, is with interfaces.
