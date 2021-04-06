@@ -1,3 +1,15 @@
+
+# Table of Contents
+1. [Inheritance](#Inheritance)
+2. [Type of inheritance](#type-inheritance)
+    -  [Single Inheritance](#single-inheritance)
+    -  [Multiple Inheritance](#multiple-inheritance) 
+    -  [Multilevel Inheritance](#multilevel-inheritance)
+    -  [Hierarchical Inheritance](#hierarchical-inheritance)
+    -  [Hybrid Inheritance](#hybrid-inheritance)
+3. [Aggregation](#aggregation)
+
+
 ## Inheritance
 Inheritance is the mechanism by which an object acquires the some/all properties of another object.
 
