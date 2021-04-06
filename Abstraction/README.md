@@ -217,3 +217,199 @@ interface Print(){
 
 }
 ```
+
+## The relationship between classes and interfaces
+
+As shown in the figure given below, a class extends another class, an interface extends another interface, but a class implements an interface.
+
+
+<p align="center">
+<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/interface-relation.jpeg">
+</p>
+
+Example
+
+```java
+interface Bank{  
+float rateOfInterest();  
+}  
+class SBI implements Bank{  
+public float rateOfInterest(){return 9.15f;}  
+}  
+class PNB implements Bank{  
+public float rateOfInterest(){return 9.7f;}  
+}  
+class TestInterface2{  
+public static void main(String[] args){  
+Bank b=new SBI();  
+System.out.println("ROI: "+b.rateOfInterest());  
+}}  
+```
+
+## Multiple inheritance in Java by interface
+
+If a class implements multiple interfaces, or an interface extends multiple interfaces, it is known as multiple inheritance.
+
+<p align="center">
+<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/multiple-inheritance-interface.png">
+</p>
+
+```Multiple inheritance is not supported through class in java, but it is possible by an interface, why?```
+
+As we have explained in the inheritance chapter, multiple inheritance is not supported in the case of class because of ambiguity. However, it is supported in case of an interface because there is no ambiguity. It is because its implementation is provided by the implementation class. For example:
+
+```java
+interface Printable{  
+void print();  
+}  
+interface Showable{  
+void print();  
+}  
+  
+class TestInterface3 implements Printable, Showable{  
+public void print(){System.out.println("Hello");}  
+public static void main(String args[]){  
+TestInterface3 obj = new TestInterface3();  
+obj.print();  
+ }  
+} 
+
+// RESULT
+Hello
+```
+
+
+## Interface inheritance
+
+A class implements an interface, but one interface extends another interface.
+
+```java
+interface Printable{  
+void print();  
+}  
+interface Showable extends Printable{  
+void show();  
+}  
+class TestInterface4 implements Showable{  
+public void print(){System.out.println("Hello");}  
+public void show(){System.out.println("Welcome");}  
+  
+public static void main(String args[]){  
+TestInterface4 obj = new TestInterface4();  
+obj.print();  
+obj.show();  
+ }  
+}  
+```
+
+## Default Method in Interface
+
+```java
+interface Drawable{  
+void draw();  
+default void msg(){System.out.println("default method");}  
+}  
+class Rectangle implements Drawable{  
+public void draw(){System.out.println("drawing rectangle");}  
+}  
+class TestInterfaceDefault{  
+public static void main(String args[]){  
+Drawable d=new Rectangle();  
+d.draw();  
+d.msg();  
+}} 
+
+// RESULT 
+drawing rectangle
+default method
+```
+
+## Static Method in Interface
+
+Since Java 8, we can have static method in interface
+
+```java
+interface Drawable{  
+void draw();  
+static int cube(int x){return x*x*x;}  
+}  
+class Rectangle implements Drawable{  
+public void draw(){System.out.println("drawing rectangle");}  
+}  
+  
+class TestInterfaceStatic{  
+public static void main(String args[]){  
+Drawable d=new Rectangle();  
+d.draw();  
+System.out.println(Drawable.cube(3));  
+}} 
+```
+
+## Difference between abstract class and interface
+
+
+But there are many differences between abstract class and interface that are given below.
+
+
+| Abstract class	| Interface|
+|---|---|
+| Abstract class can have abstract and non-abstract methods. |	Interface can have only abstract methods. Since Java 8, it can have default and static methods also.|
+| Abstract class doesn't support multiple inheritance. | Interface supports multiple inheritance.|
+| Abstract class can have final, non-final, static and non-static variables.	| Interface has only static and final variables.|
+| Abstract class can provide the implementation of interface.	| Interface can't provide the implementation of abstract class.|
+| The abstract keyword is used to declare abstract class.	| The interface keyword is used to declare interface.|
+| An abstract class can extend another Java class and implement multiple Java interfaces.	| An interface can extend another Java interface only.|
+| An abstract class can be extended using keyword "extends".	| An interface can be implemented using keyword "implements".|
+| A Java abstract class can have class members like private, protected, etc.	| Members of a Java interface are public by default.|
+
+
+Example: 
+```javapublic abstract class Shape{
+public abstract void draw();
+}	
+```
+
+Example:
+```java
+public interface Drawable{
+void d
+aw();
+}
+``` 
+
+Simply, abstract class achieves partial abstraction (0 to 100%) whereas interface achieves fully abstraction (100%).
+
+Example of abstract class and interface 
+
+```java
+//Creating interface that has 4 methods  
+interface A{  
+  void a();// by default, public and abstract  
+  void b();  
+  void c();  
+  void d();  
+}  
+  
+//Creating abstract class that provides the implementation of one method of A interface  
+abstract class B implements A{  
+  public void c(){System.out.println("I am C");}  
+}  
+  
+//Creating subclass of abstract class, now we need to provide the implementation of rest of the methods  
+class M extends B{  
+  public void a(){System.out.println("I am a");}  
+  public void b(){System.out.println("I am b");}  
+  public void d(){System.out.println("I am d");}  
+}  
+  
+//Creating a test class that calls the methods of A interface  
+class Test5{  
+  public static void main(String args[]){  
+    A a=new M();  
+    a.a();  
+    a.b();  
+    a.c();  
+    a.d();  
+  }
+}  
+```
