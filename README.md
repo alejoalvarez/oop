@@ -17,10 +17,8 @@
     -  [Methods](#method)
         -  [Constructor](#constructor)
     -  [static](#static)
-    -  [this](#this)
-4. [Interface](#interface)
-     -  [Multiple interface](#multiple-interface)
-5. [SOLID](#solid)
+    -  [this](#this)     
+4. [SOLID](#solid)
 
 ## OOP - Object Oriented Programming <a name="OOP"></a>
 
@@ -754,87 +752,6 @@ class A{
 
 Hello java
 ```
-
-## Interface <a name="interface"></a>
-
-Another way to achieve abstraction in Java, is with interfaces.
-
-An ```interface``` is a completely "abstract class" that is used to group related methods with empty bodies:
-
-Example:
-
-```java
-// Interface
-interface Animal {
-  public void sound(); // interface method (does not have a body)
-  public void sleep(); // interface method (does not have a body)
-}
-
-// Cat "implements" the Animal interface
-class Cat implements Animal {
-  public void sound() {
-    // The body of sound() is provided here
-    System.out.println("The cat says: Miau");
-  }
-  public void sleep() {
-    // The body of sleep() is provided here
-    System.out.println("Zzz");
-  }
-}
-
-class Main {
-  public static void main(String[] args) {
-    Cat myCat = new Cat();  // Create a Cat object
-    myCat.animalSound();
-    myCat.sleep();
-  }
-}
-```
-
-### Multiple Interfaces <a name="multiple-interface"></a>
-
-Example:
-
-```java
-interface FirstInterface {
-  public void myMethod(); // interface method
-}
-
-interface SecondInterface {
-  public void myOtherMethod(); // interface method
-}
-
-class DemoClass implements FirstInterface, SecondInterface {
-  public void myMethod() {
-    System.out.println("Some text..");
-  }
-  public void myOtherMethod() {
-    System.out.println("Some other text...");
-  }
-}
-
-class Main {
-  public static void main(String[] args) {
-    DemoClass myObj = new DemoClass();
-    myObj.myMethod();
-    myObj.myOtherMethod();
-  }
-}
-```
-
-**About Information:**
-- Like abstract classes, interfaces cannot be used to create objects (in the example above, it is not possible to create an "Animal" object in the MyMainClass)
-- Interface methods do not have a body - the body is provided by the "implement" class
-- On implementation of an interface, you must override all of its methods
-- Interface methods are by default ```abstract``` and ```public```
-- Interface attributes are by default ```public```, ```static``` and ```final```
-- An interface cannot contain a constructor (as it cannot be used to create objects)
-
-**Why And When To Use Interfaces?**
-
-  1) To achieve security - hide certain details and only show the important details of an object (interface).
-
-  2) Java does not support "multiple inheritance" (a class can only inherit from one superclass). However, it can be achieved with interfaces, because the class can implement multiple interfaces. Note: To implement multiple interfaces, separate them with a comma (see example below).
 
 ## SOLID <a name="solid"></a>
 [View complete definition](https://github.com/alejoalvarez/SOLID)
