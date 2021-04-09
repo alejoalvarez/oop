@@ -75,6 +75,23 @@ Bike is running
 Can we override static method?
 No, a static method cannot be overridden. It can be proved by runtime polymorphism, so we will learn it later, It is because the static method is bound with class whereas instance method is bound with an object. Static belongs to the class area, and an instance belongs to the heap area.
 
+| Parameter	| Method Overloading | Method Overriding |
+|---|---|---|
+| Polymorphism |	Method Overloading is used to implement Compile time or static polymorphism.	| Method Overriding is used to implement Runtime or dynamic polymorphism.|
+| Purpose|	It is used to expand the readability of the program.	| It is used to give the specific implementation of the method which is already provided by its base class|
+| Parameter List	| Parameters of the overloaded function must be different in either number or type in case of method overloading	| The number of parameters and type of each parameter must be the same in case of method overriding.|
+| Number of Classes	| It occurs within the same class	| It is performed within two classes with an inheritance relationship.| 
+| Inheritance |	It may or may not be required for Method Overloading	| It is must for Method Overriding |
+| Return Type	| The return type may or may not be the same, but we have to change the parameter.	| Here, the return type must be either the same or of the covariant type.|
+|static, final and private methods	| We can overload a static, final or private method in Method Overloading	| We can not override a static, final or private method in Method Overriding|
+| Bond	| Static Binding	Dynamic Binding |
+| Speed	| It is fast |	It is slower |
+| Signature |	The signature must be different	| The signature must be the same |
+| Association	| It is usually associated with static programs.	| It is usually associated with object-oriented programs.|
+| Performance	Overloading gives better performance than overriding | Lesser  Performance than Overloading because the binding of the overridden method is done at the runtime.|
+| Access Modifier	Any access modifier can be used while overloading the methods |	The level of access should be either the same or with a wider scope. |
+| Exceptions	| May throw different exceptions. |	May reduce or eliminate exceptions. But, must not throw new or broader checked exceptions but can throw narrower checked exceptions.|
+
 ## super
 
 The super keyword in Java is a reference variable which is used to refer immediate parent class object.
