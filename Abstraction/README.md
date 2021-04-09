@@ -362,6 +362,14 @@ But there are many differences between abstract class and interface that are giv
 | An abstract class can be extended using keyword "extends".	| An interface can be implemented using keyword "implements".|
 | A Java abstract class can have class members like private, protected, etc.	| Members of a Java interface are public by default.|
 
+| parameters | Abstract class | Interface |
+|---|---|---|
+| keyword used | abstract  | interface |
+| Type of variable | static and non-static | static |
+| Access modifiers | All access modifiers |  Only public acces modifiers |
+| speed | Fast | Slow |
+| When to used | To avoid independence | For future Enhancement |
+
 
 Example: 
 ```javapublic abstract class Shape{
