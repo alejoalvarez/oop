@@ -305,6 +305,53 @@ There are 3 ways to initialize object in Java.
 - By method
 - By constructor
 
+
+we can create objects with 6 different methods which are:
+
+- By new keyword
+- By newInstance() method of Class class
+- By newInstance() method of constructor class
+- By clone() method
+- By deserialization
+- By factory method
+
+```Java Object Creation by new keyword```
+It is the most simple and common way of creating an object of a class. By using the new keyword, we can call any type of constructor of the class that is, either the parameterized constructor or non-parameterized constructor.
+
+```java
+ClassName ObjectName = new ClassName();
+```
+
+```Java Object Creation by newInstance() method of Class class```
+This is another technique to create an object of the class. We use the newInstance() method of a Class class to create an object. This newInstance() method calls the no-arg constructor of the class to create the object.
+
+```java
+Class cls = Class.forName("ClassName");
+ClassName objectName = (ClassName) cls.newInstance();
+```
+
+```Java Object Creation by newInstance() method of Constructor class```
+We can also use the newInstance() method of java.lang.reflect.Constructor class to create an object. The newInstance() method of the Constructor class is similar to the newInstance() method of the Class class.
+
+```java
+Constructor<ClassName> constructor = ClassName.class.getConstructor();
+ClassName objectName = constructor.newInstance();
+```
+
+```Java Object Creation by clone() method```
+When we call the clone() method through an object, the Java compiler automatically creates a new object of that class. JVM actually copies all content of the older object into the newly created object.
+
+To use the clone() method on an object we have to implement the Cloneable interface and override the clone() method in our class.
+
+```java
+ClassName object1 = new ClassName();
+ClassName object2 = (ClassName) object1.clone();
+```
+
+```Java Object Creation using deserialization```
+When we serialize an object and then deserialize it, JVM creates a new object. To deserialize an object, we need to implement the java.io.Serializable.
+
+
 ```Initialization through reference:```
 Initializing an object means storing data into the object. Let's see a simple example where we are going to initialize the object through a reference variable.
 
