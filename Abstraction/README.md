@@ -367,6 +367,7 @@ But there are many differences between abstract class and interface that are giv
 | In abstract classes the word abstract is mandatory to define an abstract method (as well as the class) | When you define an interface, this word is optional since it is inferred in the concept of interface.|
 | Abstract classes, unlike interfaces, can have constructors, default method implementations and can only be inherited once from these. | Although in java 8, default implementations are allowed, they cannot contain constructors. In the case of interfaces, if you can implement multiple of these |
 | abstract classes are more used for base type objects. It is like the parent in the hierarchy in a set of objects that share the same parent. | The interfaces are known as a contract. This is because they force you to implement their methods, which ensures all business logic that every object that implements it will have access to the methods defined in it. |
+| Abstract think more about objects | Interface think more about implementation |
 
 | parameters | Abstract class | Interface |
 |---|---|---|
