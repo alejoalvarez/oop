@@ -6,7 +6,10 @@ Data Abstraction may also be defined as the process of identifying only the requ
 
 In other words, Abstraction in Java is a technique by which we can hide the data that is not required to a user
 
-Example<br>
+Abstraction forces to use Inheritance
+
+Example
+
 We all use an ATM machine for cash withdrawal, money transfer, retrieve min-statement, etc in our daily life. But we don't know internally what things are happening inside ATM machine when you insert ATM card for performing any kind of operations.
 
 ## Abstraction in java
