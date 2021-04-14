@@ -108,10 +108,11 @@ Another way to achieve abstraction in Java, is with interfaces.
 
 The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
 
-Since Java 8, we can have default and static methods in an interface.
-
-Since Java 9, we can have private methods in an interface.
-
+- It is an abstract class, that is, it cannot be instantiated
+- Since Java 8, we can have default and static methods in an interface.
+- Since Java 9, we can have private methods in an interface.
+- It has a list of methods that have no definition. So the methods are abstract (they have no functionality)
+- Java interface is a collection of abstract methods
 
 An ```interface``` is a completely "abstract class" that is used to group related methods with empty bodies:
 
@@ -347,9 +348,9 @@ System.out.println(Drawable.cube(3));
 
 ## Difference between abstract class and interface
 
+The main difference between interface and abstract class is that an interface provides an encapsulation mechanism for method protocols without forcing the user to use inheritance.
 
 But there are many differences between abstract class and interface that are given below.
-
 
 | Abstract class	| Interface|
 |---|---|
@@ -361,6 +362,11 @@ But there are many differences between abstract class and interface that are giv
 | An abstract class can extend another Java class and implement multiple Java interfaces.	| An interface can extend another Java interface only.|
 | An abstract class can be extended using keyword "extends".	| An interface can be implemented using keyword "implements".|
 | A Java abstract class can have class members like private, protected, etc.	| Members of a Java interface are public by default.|
+| An abstract class can inherit from a single class (abstract or not) | interface can extend several interfaces at the same time. |
+| An abstract class can have methods that are or are not abstract | interfaces can only and exclusively define abstract methods or a default method |
+| In abstract classes the word abstract is mandatory to define an abstract method (as well as the class) | When you define an interface, this word is optional since it is inferred in the concept of interface.|
+| Abstract classes, unlike interfaces, can have constructors, default method implementations and can only be inherited once from these. | Although in java 8, default implementations are allowed, they cannot contain constructors. In the case of interfaces, if you can implement multiple of these |
+| abstract classes are more used for base type objects. It is like the parent in the hierarchy in a set of objects that share the same parent. | The interfaces are known as a contract. This is because they force you to implement their methods, which ensures all business logic that every object that implements it will have access to the methods defined in it. |
 
 | parameters | Abstract class | Interface |
 |---|---|---|
