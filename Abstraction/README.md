@@ -54,6 +54,18 @@ A non-abstract class cannot have an abstract method whether it is inherited or d
   **2**. It cannot be private because the abstract method must be implemented in the subclass. If we declare it as private, we cannot implement it from outside the class.<br>
   **3**. A concrete method is a method which has always the body. It is also called a complete method in java.
   
+- Declares the existence of methods but not the implementation of those.
+- An abstract class defines behaviors that can vary due to polyomorphism and that each explicit class that inherits from it must implement depending on its specific need.
+- You cannot have an instance of an abstract class
+- For a class to be abstract at least one of its methods must be abstract (this is the difference between a conventional class and an abstract class)
+- An abstract class cannot be instantiated but it can be inherited (Objects cannot be created directly with new)
+- Its use depends on the application of the concept of Inheritance
+- The first concrete subclass that inherits from an abstract class must implement all the superclass's methods
+- An abstract method does not define how it will behave since this logic is put in the classes that will implement the method
+An abstract class forces you to use inheritance
+  
+  
+  
 
 Example Abstract class
 ```java
