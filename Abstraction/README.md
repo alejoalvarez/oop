@@ -240,7 +240,7 @@ As shown in the figure given below, a class extends another class, an interface 
 
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/interface-relation.jpeg">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120521854-a4ab4600-c39a-11eb-93e1-1bdf9fee8769.jpeg">
 </p>
 
 Example
@@ -267,7 +267,7 @@ System.out.println("ROI: "+b.rateOfInterest());
 If a class implements multiple interfaces, or an interface extends multiple interfaces, it is known as multiple inheritance.
 
 <p align="center">
-<img height="350" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/multiple-inheritance-interface.png">
+<img height="350" src="https://user-images.githubusercontent.com/13514156/120522069-b4c32580-c39a-11eb-9c48-6331fe379440.png">
 </p>
 
 ```Multiple inheritance is not supported through class in java, but it is possible by an interface, why?```
