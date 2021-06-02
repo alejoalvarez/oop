@@ -462,7 +462,7 @@ There are two rules defined for the constructor.
 - A Java constructor cannot be abstract, static, final, and synchronized
 
 <p align="center">
-<img height="270" src="https://github.com/alejoalvarez/Images/blob/trunk/Java/constructors.jpeg">
+<img height="270" src="https://user-images.githubusercontent.com/13514156/120521317-70378a00-c39a-11eb-914b-de6e07fd416f.jpeg">
 </p>
 
 ### static <a name="static"></a>
