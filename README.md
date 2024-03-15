@@ -80,7 +80,7 @@ The meaning of **Encapsulation**, is to make sure that "sensitive" data is hidde
   - Flexible: the programmer can change one part of the code without affecting other parts
   - Increased security of data
 
-  [See more about Encapsulation](https://github.com/Alejo-Alvarezv/OOP/blob/master/Encapsulation)
+  [See more about Encapsulation](https://github.com/alejoalvarez/oop/blob/master/Encapsulation.md)
    
 ### ```Abstraction``` <a name="abstraction"></a>
 Abstract Classes and Methods
