@@ -29,8 +29,7 @@ Terms:
 
 Syntax:
 ```java
-class Subclass-name extends Superclass-name  
-{  
+class Subclass-name extends SuperclassName{  
    //methods and fields  
 } 
 ```
@@ -41,11 +40,13 @@ class Employee{
 } 
 
 class Programmer extends Employee{  
- int bonus=10000;  
+ 
+ int bonus = 10000;  
+ 
  public static void main(String args[]){  
-   Programmer p=new Programmer();  
-   System.out.println("Programmer salary is:"+p.salary);  
-   System.out.println("Bonus of Programmer is:"+p.bonus);  
+   Programmer p = new Programmer();  
+   System.out.println("Programmer salary is: " + p.salary);  
+   System.out.println("Bonus of Programmer is: " + p.bonus);  
  }  
 }
 ```
@@ -81,8 +82,10 @@ class TestInheritance{
         d.eat();  
     }
 }
+```
 
-// RESULT 
+```
+Output:
 barking...
 eating..
 ```
@@ -110,13 +113,17 @@ class B{
 }  
 class C extends A,B{
    
- public static void main(String args[]){  
-   C obj=new C();  
-   obj.msg();//Now which msg() method would be invoked?  
-}  
+    public static void main(String args[]){  
+        C obj=new C();  
+        obj.msg();//Now which msg() method would be invoked?  
+    }  
 }  
 
-// RESULT
+```
+
+```
+Output:
+
 compile time error
 ```
 
@@ -153,7 +160,11 @@ class TestInheritance2{
     }
 }
 
-//RESULT
+```
+
+```
+Output: 
+
 weeping...
 barking...
 eating...
@@ -188,14 +199,18 @@ class Cat extends Animal{
 }  
 class TestInheritance3{  
     public static void main(String args[]){  
-    Cat c=new Cat();  
-    c.meow();  
-    c.eat();  
-    //c.bark();//Compile Time Error  
+        Cat c=new Cat();  
+        c.meow();  
+        c.eat();  
+        //c.bark();//Compile Time Error  
     }
 } 
 
-//RESULT
+```
+
+```
+Output:
+
 meowing...
 eating...
 ```
@@ -216,7 +231,7 @@ Hybrid inheritance is a combination of two or more types of inheritance.
 
 If a class have an entity reference, it is known as Aggregation
 
-Consider a situation, Employee object contains many informations such as id, name, emailId etc. It contains one more object named address, which contains its own informations such as city, state, country, zipcode etc. as given below.
+Consider a situation, Employee object contains many informations such as id, name, emailId etc. It contains one more object named address, which contains its own information such as city, state, country, zipcode etc. as given below.
 
 ```java
 class Employee{  
@@ -232,18 +247,18 @@ In such case, Employee has an entity reference address, so relationship is Emplo
 ```java
 class Operation{  
  int square(int n){  
-  return n*n;  
+  return n * n;  
  }  
 }  
   
 class Circle{  
- Operation op;//aggregation  
- double pi=3.14;  
+ Operation op; //aggregation  
+ double pi = 3.14;  
     
  double area(int radius){  
-   op=new Operation();  
-   int rsquare=op.square(radius);//code reusability (i.e. delegates the method call).  
-   return pi*rsquare;  
+   op = new Operation();  
+   int rsquare = op.square(radius);//code reusability (i.e. delegates the method call).  
+   return pi * rsquare;  
  }  
   
      

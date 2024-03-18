@@ -168,7 +168,7 @@ class Car extends Vehicle {
 
 - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
-  [See more about Inheritance](https://github.com/Alejo-Alvarezv/OOP/tree/master/Inheritance)
+  [See more about Inheritance](https://github.com/alejoalvarez/oop/blob/master/Inheritance.md)
 
 ### ```Polymorphism``` <a name="polymorphism"></a>
 Objects are allowed to take on more than one form depending on the context. The program will determine which 
