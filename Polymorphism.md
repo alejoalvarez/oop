@@ -68,10 +68,14 @@ class Bike2 extends Vehicle{
   }  
 }  
 
-//RESULT
+```
+
+```
+Output:
 
 Bike is running
 ```
+
 Can we override static method?
 No, a static method cannot be overridden. It can be proved by runtime polymorphism, so we will learn it later, It is because the static method is bound with class whereas instance method is bound with an object. Static belongs to the class area, and an instance belongs to the heap area.
 
@@ -113,20 +117,24 @@ class Animal{
   }  
   
   class Dog extends Animal{  
-  String color="black";  
-  void printColor(){  
-    System.out.println(color);//prints color of Dog class  
-    System.out.println(super.color);//prints color of Animal class  
+    String color="black";  
+    void printColor(){  
+      System.out.println(color);//prints color of Dog class  
+      System.out.println(super.color);//prints color of Animal class  
     }  
-  }  
-  class TestSuper1{  
-  public static void main(String args[]){  
-  Dog d=new Dog();  
-  d.printColor();  
-}
-}
+  }
 
-// RESULT
+  class TestSuper1 {  
+  public static void main(String args[]){  
+    Dog d=new Dog();  
+    d.printColor();  
+  }
+}
+```
+
+```
+Output: 
+
 black
 white
 ```
@@ -158,8 +166,11 @@ class TestSuper2{
     d.work();  
   }
 } 
+```
 
-//RESULT
+```
+Output: 
+
 eating...
 barking...
 ```
@@ -184,11 +195,15 @@ class Dog extends Animal{
 
 class TestSuper3{  
   public static void main(String args[]){  
-    Dog d=new Dog();  
+    Dog d = new Dog();  
   }
 }
 
-//RESULT 
+```
+
+```
+Output:
+
 animal is created
 dog is created
 ```
@@ -210,7 +225,7 @@ class Emp extends Person{
   float salary;  
   Emp(int id,String name,float salary){  
     super(id,name);//reusing parent constructor  
-    this.salary=salary;  
+    this.salary = salary;  
   }  
   void display(){
     System.out.println(id + " " + name + " " + salary);
@@ -219,12 +234,16 @@ class Emp extends Person{
 
 class TestSuper5{  
   public static void main(String[] args){  
-    Emp e1=new Emp(1,"alejo",45000f);  
+    Emp e1 = new Emp(1,"alejo",45000f);  
     e1.display();  
   }
 }
 
-//RESULT
+```
+
+```
+Output:
+
 1 alejo 45000
 ```
 
@@ -252,7 +271,11 @@ class Bike{
     }      
 } 
 
-//RESULT
+```
+
+```
+Output:
+
 speed is 100
 speed is 100
 ```
@@ -283,14 +306,18 @@ class Bike{
     }      
 } 
 
-//RESULT
-instance initializer block invoked
-constructor is invoked
-instance initializer block invoked
-constructor is invoked
 ``` 
 
-In the above example, it seems that instance initializer block is firstly invoked but NO. Instance intializer block is invoked at the time of object creation. The java compiler copies the instance initializer block in the constructor after the first statement super(). So firstly, constructor is invoked
+```
+Output: 
+
+instance initializer block invoked
+constructor is invoked
+instance initializer block invoked
+constructor is invoked
+```
+
+In the above example, it seems that instance initializer block is firstly invoked but NO. Instance initializer block is invoked at the time of object creation. The java compiler copies the instance initializer block in the constructor after the first statement super(). So firstly, constructor is invoked
 
 ```Important``` => The java compiler copies the code of instance initializer block in every constructor.
 
@@ -353,7 +380,11 @@ class B2 extends A{
   }  
 } 
 
-//RESULT
+```
+
+```
+Output:
+
 parent class constructor invoked
 instance initializer block is invoked
 child class constructor invoked
@@ -378,9 +409,9 @@ Example
 
 ```java
 class Car{  
- final int speedlimit = 90; //final variable  
+ final int speedLimit = 90; //final variable  
  void run(){  
-  speedlimit=400;  
+  speedLimit=400;  
  }  
  public static void main(String args[]){  
  Car obj=new Car();  
@@ -388,7 +419,11 @@ class Car{
  }  
 }
 
-//RESULT
+```
+
+```
+Output:
+
 Compile Time Error
 ```
 
@@ -413,8 +448,11 @@ class Honda extends Car{
     honda.run();  
    }  
 } 
+```
 
-//Result
+```
+Output:
+
 Compile Time Error
 ```
 
@@ -436,7 +474,11 @@ class Honda extends Car{
   }  
 }
 
-// RESULT
+```
+
+```
+Output:
+
 Compile Time Error
 ```
 
@@ -483,7 +525,11 @@ class Splendor extends Bike{
   }  
 }
 
-// RESULT
+```
+
+```
+Output:
+
 running safely
 ```
 
@@ -526,7 +572,11 @@ class TestPolymorphism2{
   }  
 } 
 
-// RESULT 
+```
+
+```
+Output: 
+
 drawing rectangle
 drawing circle
 drawing triangle
