@@ -124,7 +124,7 @@ class Main {
 }
 ```
 
-  [See more about Abstraction](https://github.com/Alejo-Alvarezv/OOP/blob/master/Abstraction)
+  [See more about Abstraction](https://github.com/alejoalvarez/oop/blob/master/Abstraction.md)
 
 ### ```Inheritance``` <a name="inheritance"></a>
 Subclass and superclass
