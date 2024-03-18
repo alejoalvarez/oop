@@ -217,8 +217,7 @@ class Main {
 
 It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
 
-  [See more about Polymorphism](https://github.com/Alejo-Alvarezv/OOP/blob/master/Polymorphism)
-
+  [See more about Polymorphism](https://github.com/alejoalvarez/oop/blob/master/Polymorphism.md)
 
 ### Coupling <a name="coupling"></a>
 Coupling refers to the knowledge or information or dependency of another class. It arises when classes are aware of each other. If a class has the details information of another class, there is strong coupling. In Java, we use private, protected, and public modifiers to display the visibility level of a class, method, and field. You can use interfaces for the weaker coupling because there is no concrete implementation.
